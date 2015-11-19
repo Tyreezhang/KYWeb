@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>上海客易软件有限公司--首页</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.jslides.js"></script>
+    <style type="text/css">
+        .img {
+            width: 180px;
+            height: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+        /*鼠标上移*/
+        function onmouse(flag) {
+            switch (flag) {
+                case "erp":
+                    $("#erp").attr("src", "images/erp1.png");
+                    break;
+                case "crm":
+                    $("#crm").attr("src", "images/crm1.png");
+                    break;
+                case "oa":
+                    $("#oa").attr("src", "images/oa1.png");
+                    break;
+                default: break;
+            }
+        }
+        /*鼠标离开*/
+        function leavemouse(flag) {
+            switch (flag) {
+                case "erp":
+                    $("#erp").attr("src", "images/erp.png");
+                    break;
+                case "crm":
+                    $("#crm").attr("src", "images/crm.png");
+                    break;
+                case "oa":
+                    $("#oa").attr("src", "images/oa.png");
+                    break;
+                default: break;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // 成功案例滚动
+            var flag = "left";
+            function DY_scroll(wraper, prev, next, img, speed, or) {
+                var wraper = $(wraper);
+                var prev = $(prev);
+                var next = $(next);
+                var img = $(img).find('ul');
+                var w = img.find('li').outerWidth(true);
+                var s = speed;
+                next.click(function () {
+                    img.animate({ 'margin-left': -w }/*,1500,'easeOutBounce'*/, function () {
+                        img.find('li').eq(0).appendTo(img);
+                        img.css({ 'margin-left': 0 });
+                    });
+                    flag = "left";
+                });
+                prev.click(function () {
+                    img.find('li:last').prependTo(img);
+                    img.css({ 'margin-left': -w });
+                    img.animate({ 'margin-left': 0 }/*,1500,'easeOutBounce'*/);
+                    flag = "right";
+                });
+                if (or == true) {
+                    ad = setInterval(function () { flag == "left" ? next.click() : prev.click() }, s * 1000);
+                    wraper.hover(function () { clearInterval(ad); }, function () { ad = setInterval(function () { flag == "left" ? next.click() : prev.click() }, s * 1000); });
+                }
+            }
+            DY_scroll('.hl_main5_content', '.hl_scrool_leftbtn', '.hl_scrool_rightbtn', '.hl_main5_content1', 2, true);// true为自动播放，不加此参数或false就默认不自动 
+        });
+    </script>
+</head>
+<body>
+    <!-- top-->
+    <div class="top">
+        <div class="public_box">
+            <div class="top_logo">
+                <img src="images/logo.jpg" />
+            </div>
+            <div class="top_font">
+                <div class="hot_phone">服务热线：021-64063928</div>
+                <div class="font_nav">
+                    <a href="../Index.html" style="background: #dd224f;">
+                        <span class="font_chinese">首 页</span>
+                        <span class="font_english">Home</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../AboutUs.html">
+                        <span class="font_chinese">关于我们</span>
+                        <span class="font_english">About Us</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Products.html">
+                        <span class="font_chinese">产品中心</span>
+                        <span class="font_english">Products</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Solutions.html">
+                        <span class="font_chinese">解决方案</span>
+                        <span class="font_english">Solutions</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Customized.html">
+                        <span class="font_chinese">软件定制</span>
+                        <span class="font_english">Customized Software</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../SuccesfulCases.html">
+                        <span class="font_chinese">成功案例</span>
+                        <span class="font_english">Succesful Cases</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../News.html">
+                        <span class="font_chinese">新闻中心</span>
+                        <span class="font_english">News</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../ContactUs.html">
+                        <span class="font_chinese">联系我们</span>
+                        <span class="font_english">Contact US</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner-->
+    <div id="lanrenzhijia">
+        <ul id="slides">
+            <li style="z-index: 0; display: block; background: url(images/banner_01.jpg) 50% 0% no-repeat;"></li>
+            <li style="z-index: 1; display: none; background: url(images/banner_02.jpg) 50% 0% no-repeat;"></li>
+            <li style="z-index: 1; display: none; background: url(images/banner_03.jpg) 50% 0% no-repeat;"></li>
+        </ul>
+    </div>
+
+    <div class="public_box">
+        <div class="content_left">
+            <h3>最新动态</h3>
+            <div style="float: left">
+                <h3 style="color: #D72549;">LATEST NEWS</h3>
+            </div>
+            <div style="float: right">
+                <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
+                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+            </div>
+            <div style="clear: both">
+                <ul class="news">
+                    <li><a href="../News.html?Id=one">中国数十万企业ERP系统待升级2014-05-10</a></li>
+                    <li>----------------------------------------</li>
+                    <li><a href="../News.html?Id=two">2015年家具行业 五大营销趋势分析研究2014-05-10</a></li>
+                    <li>----------------------------------------</li>
+                    <li><a href="../News.html?Id=three">ERP系统信息安全问题解析2014-05-10</a></li>
+                    <li>----------------------------------------</li>
+                    <li><a href="../News.html?Id=four">Gartner：2015年全球IT支出将稳步增长2014-05-10</a></li>
+                    <li>----------------------------------------</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_mid">
+            <h3>公司简介</h3>
+            <div style="float: left">
+                <h3 style="color: #D72549;">COMPANY PROFILE</h3>
+            </div>
+            <div style="float: right">
+                <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
+                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+            </div>
+            <div style="clear: both">
+                <img src="images/company_profile.png" />
+                <p style="font-family: 微软雅黑; font-size: 13px; color: black;">
+                    &nbsp; &nbsp; 客易软件有限公司是在高新技术应用领域中专业从事应用系统开发、电子商务ERP系统开发等服务的高新技术企业。客易专注于电子商务等相关行业信息化领域....
+                </p>
+            </div>
+        </div>
+        <div class="content_right">
+            <h3>公司定制向导</h3>
+            <div style="float: left">
+                <h3 style="color: #D72549;">INDIVIDUAL SERVICE</h3>
+            </div>
+            <div style="float: right">
+                <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
+                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+            </div>
+            <div style="clear: both">
+                <img src="images/individual_service.png" />
+                <p style="font-family: 微软雅黑; font-size: 13px; color: black;">
+                    &nbsp; &nbsp; 企业专属化定制服务：根据企业要求，立足500企业的专属设计....
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="public_box">
+        <h1 style="text-align: center; color: #5B5B5B;">产 品 中 心</h1>
+    </div>
+    <div class="public_box">
+        <div class="content_left">
+            <a>
+                <img id="erp" style="cursor: pointer;" src="images/erp.png" onmouseover="onmouse('erp');" onmouseout="leavemouse('erp') " />
+            </a>
+        </div>
+        <div class="content_mid" style="margin-left: 4%;">
+            <a>
+                <img id="crm" style="cursor: pointer;" src="images/crm.png" onmouseover="onmouse('crm');" onmouseout="leavemouse('crm') " />
+            </a>
+        </div>
+        <div class="content_right" style="margin-left: 4%;">
+            <a>
+                <img id="oa" style="cursor: pointer;" src="images/oa.png" onmouseover="onmouse('oa');" onmouseout="leavemouse('oa') " />
+            </a>
+        </div>
+    </div>
+    <div class="public_box">
+        <h1 style="text-align: center; color: #5B5B5B;">成 功 案 例</h1>
+    </div>
+    <!--成功案例-->
+    <div class="public_box">
+        <div class="hl_main5_content">
+            <div class="hl_scrool_leftbtn"></div>
+            <div class="hl_main5_content1">
+                <ul style="margin-left: 0px;">
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/bj.png" alt="标爵" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/htt.png" alt="火图腾" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/ks.png" alt="凯森" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/kes.png" alt="康恩诗" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/lkfn.png" alt="罗凯芬尼" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/pgy.png" alt="蒲公英" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/sdx.png" alt="诗帝轩" /></li>
+                    <li style="margin-left: 5px;">
+                        <img class="img" src="images/ys.png" alt="羊氏" /></li>
+                </ul>
+            </div>
+            <div class="hl_scrool_rightbtn"></div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="foot">
+        <div class="foot_top">
+            <div class="public_box">
+                <p style="float: left; margin-left: 6%; margin-top: 15px; color: #fff; font-size: 14px; padding: 5px; width: 300px;">
+                    客服热线：<br />
+                    （上海）<span style="font-size: 19px">021-64063928</span><br />
+                    （佛山）<span style="font-size: 19px">0757-82901710</span><br />
+                    <span style="color: #919191;">服务时间： 09:00-24:00</span><br />
+                    <img style="margin-top: 8px;" src="images/QQ-微博-微信图标.png" />
+                </p>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img src="images/技术支持.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; line-height: 29px; text-align: center">技术支持</span>
+                    </p>
+                    <ul class="support">
+                        <li>软件安装升级
+                        </li>
+                        <li>系统培训
+                        </li>
+                        <li>业务流程梳理
+                        </li>
+                        <li>大促活动驻场支持
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img style="width: 24px; height: 29px;" src="images/招贤纳士.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; margin-top: 20px;">招贤纳士</span>
+                    </p>
+                    <ul class="support">
+                        <li><a href="../ContactUs.html" style="color: #fff">加入我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 80px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/新浪微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">新浪微博</li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 50px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/腾讯微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">腾讯微博</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">Copyright＠ 2011 上海客易软件有限公司</span>
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">地址：上海市七莘路250号中诣创意产业园2号楼2层   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东省佛山市禅城区季华五路金海大厦706</span>
+        </div>
+    </div>
+</body>
+</html>

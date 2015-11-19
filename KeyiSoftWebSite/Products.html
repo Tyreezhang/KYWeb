@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>产品中心</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/public.js"></script>
+    <style type="text/css">
+        .font_nav a {
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            float: left;
+            padding: 2px 10px 30px 10px;
+        }
+
+        .content {
+            width: 1100px;
+        }
+
+            .content ul {
+                float: left;
+            }
+
+        .nav_ul {
+            width: 80px;
+        }
+
+            .nav_ul li {
+                font-size: 14px;
+                padding: 3px;
+                width: 80px;
+            }
+
+                .nav_ul li a {
+                    color: black;
+                }
+
+        .basic_ul li {
+            width: 292px;
+            padding: 5px;
+        }
+
+        .basic_ul p {
+            margin-top: 8px;
+            font-size: 13.5px;
+        }
+    </style>
+</head>
+<body>
+    <!--头部导航-->
+    <div class="top">
+        <div class="public_box">
+            <div class="top_logo">
+                <img src="images/logo.jpg" />
+            </div>
+            <div class="top_font">
+                <div class="hot_phone">服务热线：021-64063928</div>
+                <div class="font_nav">
+                    <a href="../Index.html">
+                        <span class="font_chinese">首 页</span>
+                        <span class="font_english">Home</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../AboutUs.html">
+                        <span class="font_chinese">关于我们</span>
+                        <span class="font_english">About Us</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Products.html" style="background: #dd224f;">
+                        <span class="font_chinese">产品中心</span>
+                        <span class="font_english">Products</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Solutions.html">
+                        <span class="font_chinese">解决方案</span>
+                        <span class="font_english">Solutions</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Customized.html">
+                        <span class="font_chinese">软件定制</span>
+                        <span class="font_english">Customized Software</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../SuccesfulCases.html">
+                        <span class="font_chinese">成功案例</span>
+                        <span class="font_english">Succesful Cases</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../News.html">
+                        <span class="font_chinese">新闻中心</span>
+                        <span class="font_english">News</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../ContactUs.html">
+                        <span class="font_chinese">联系我们</span>
+                        <span class="font_english">Contact US</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+
+    <div class="banner">
+        <div class="public_box">
+            <div class="banner_top" style="margin-top: 3px; width: auto;">
+                <h1 style="color: black; font-size: 42px; display: inline;">产品中心</h1>
+                <h2 style="color: #dd224f; margin-left: 10px; font-size: 32px; display: inline; font-family: 微软雅黑">Products</h2>
+                <br />
+                <div class="banner_top_navigation" style="margin-left: 2px; width: 55px;" id="A1" onmouseover="mouseover('A1','top');" onmouseout="mouseout('A1','top')"><a href="javascript:void(0);" id="Company">ERP系统</a></div>
+                <div class="banner_top_navigation" style="width: 62px;" id="A2" onmouseover="mouseover('A2','top');" onmouseout="mouseout('A2','top')"><a href="javascript:void(0);" id="Organization">CRM系统</a></div>
+                <div class="banner_top_navigation" style="width: 60px;" id="A3" onmouseover="mouseover('A3','top');" onmouseout="mouseout('A3','top')"><a href="javascript:void(0);" id="Vision">OA系统</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="public_box">
+        <div class="content" style="margin-top: 1px;">
+            <img style="width: 1020px; margin-left: 50px;" src="images/ERP-banner.jpg" />
+            <img style="width: 1020px; margin-left: 50px; margin-top: -5px;" src="images/花边.jpg" />
+        </div>
+        <div style="text-align: center; margin-left: 67px;">
+            <label style="font-size: 38px;">稳定卓越的技术结构</label>
+        </div>
+    </div>
+    <!--基础信息-->
+    <div class="public_box">
+        <div class="content" style="margin-left: 2%;" id="basic">
+            <ul class="nav_ul" style="position: fixed; left: 7%; top: 44%;">
+                <li id="B1" onmouseover="mouseover('B1');" onmouseout="mouseout('B1')"><span style="width: 5px; height: 2px;">&nbsp;</span>&nbsp;<a href="javascript:void(0);" onclick="toAlphaPosition('basic');">基础信息</a></li>
+                <li id="B2" onmouseover="mouseover('B2');" onmouseout="mouseout('B2')"><span style="width: 5px; height: 2px;">&nbsp;</span>&nbsp;<a href="javascript:void(0);" onclick="toAlphaPosition('commodity');">商品管理</a></li>
+                <li id="B3" onmouseover="mouseover('B3');" onmouseout="mouseout('B3')"><span style="width: 5px; height: 2px;">&nbsp;</span>&nbsp;<a href="javascript:void(0);" onclick="toAlphaPosition('purchase');">采购管理</a></li>
+                <li id="B4" onmouseover="mouseover('B4');" onmouseout="mouseout('B4')"><span style="width: 5px; height: 2px;">&nbsp;</span>&nbsp;<a href="javascript:void(0);" onclick="toAlphaPosition('storehouse');">仓库管理</a></li>
+                <li id="B5" onmouseover="mouseover('B5');" onmouseout="mouseout('B5')"><span style="width: 5px; height: 2px;">&nbsp;</span>&nbsp;<a href="javascript:void(0);" onclick="toAlphaPosition('order');">订单管理</a></li>
+            </ul>
+            <ul class="nav_ul" style="display: block">
+                <li>&nbsp;</li>
+            </ul>
+            <ul>
+                <li>
+                    <img style="width: 340px; margin-top: 60px; margin-left: 5px;" src="images/基础信息图标.jpg" /></li>
+            </ul>
+            <ul class="basic_ul">
+                <li>
+                    <label style="font-size: 30px;">基础信息</label>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">店铺管理</label>
+                    <p>
+                        功能概要: 记录店铺的基本信息，以及Appkey、AppSecre、Session等信息。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">物流管理</label>
+                    <p>
+                        功能概要: 全面记录物流公司信息，包括省、市、县到达天数、运费、起步价、是否包邮等信息，在发货的时候，发货人员可以根据选择的物流公司，来判断选择的物流公司是否到达该区域，到达该区域需要的时间，以及物流费用等。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">三包公司</label>
+                    <p>
+                        功能概要: 主要用于记录三包公司信息，三包公司的默认物流，收费比例，以及所在区域等，方便售后人员根据客户信息，查找到合适的三包公司，能及时处理售后问题等。
+                    </p>
+                </li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 10px;">
+                <li>
+                    <label style="font-size: 30px;">&nbsp;</label>
+                </li>
+                <li style="width: 288px;">
+                    <label style="font-size: 21.5px;">供应商管理</label>
+                    <p>
+                        功能概要: 记录供应商资料，在供应商资料界面可以集中查看供应商名称、星级、类别、采购员、来源、等信息，并查看相关联的客户联系人、采购历史。<br />
+                        1.根据供应商名称、类别、采购员、来源、星级选项进行模糊查询。<br />
+                        2.对某一个客户添加联系人信息（姓名、部门、职务、联系电话、传真号码、手机号码、邮箱等信息）。<br />
+                        3.可以记录该供应商供应哪些货物，便于采购人员采购商品。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">会员管理</label>
+                    <p>
+                        功能概要: 记录会员信息，能导出会员信息。会员信息主要包括昵称、姓名、电话、省市县、地址、来源店铺等信息。
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <!--商品管理-->
+        <div class="content" id="commodity" style="margin-left: 2%;">
+            <ul class="nav_ul" style="display: block">
+                <li>&nbsp;</li>
+            </ul>
+            <ul>
+                <li>
+                    <img style="width: 340px;" src="images/商品管理图标.jpg" /></li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 4px;">
+                <li>
+                    <label style="font-size: 30px;">商品管理</label>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">商品属性管理</label>
+                    <p>
+                        功能概要: 全面记录商品属性，包括属性值和属性名称。包括颜色、尺码、系列、风格等，可以随时录入和更新信息。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">商品资料管理</label>
+                    <p>
+                        功能概要: 商品资料的增、删、改、查等功能，以及导入、审核功能。只有审核后的商品才能在订单中显示出来，否则新增的商品资料在未审核中，需要审核后才可以。
+                    </p>
+                </li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 10px;">
+                <li>
+                    <label style="font-size: 30px;">&nbsp;</label>
+                </li>
+                <li style="width: 288px;">
+                    <label style="font-size: 21.5px;">店铺商品管理</label>
+                    <p>
+                        功能概要: 导入功能、修改功能。主要记录哪个店铺分配有哪些商品，且每件商品都配有价格区间。导入时，可以先生成模板文件，填写完信息后，点击浏览再提交。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">&nbsp</label>
+                    <p style="height: 60px;">
+                        &nbsp;
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <!--采购管理-->
+        <div class="content" id="purchase" style="margin-left: 2%;">
+            <ul class="nav_ul" style="display: block">
+                <li>&nbsp;</li>
+            </ul>
+            <ul>
+                <li>
+                    <img style="width: 340px;" src="images/采购管理图标.jpg" /></li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 4px;">
+                <li>
+                    <label style="font-size: 30px;">采购管理</label>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">采购申请</label>
+                    <p>
+                        功能概要: 包含新增、修改、查询、作废、审核等功能。采购人员需要先填写采购申请，待上级审核通过后，才进入到采购阶段。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">&nbsp</label>
+                    <p style="height: 60px;">
+                        &nbsp;
+                    </p>
+                </li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 10px;">
+                <li>
+                    <label style="font-size: 30px;">&nbsp;</label>
+                </li>
+                <li style="width: 288px;">
+                    <label style="font-size: 21.5px;">商品入库</label>
+                    <p>
+                        功能概要: 新增、修改、作废、提交、查询等功能。商品填写单据后处于未提交状态，提交后确认收货，然后上级需要审核后，正式入库。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">&nbsp</label>
+                    <p style="height: 60px;">
+                        &nbsp;
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <!--仓库管理-->
+        <div class="content" id="storehouse" style="margin-left: 2%;">
+            <ul class="nav_ul" style="display: block">
+                <li>&nbsp;</li>
+            </ul>
+            <ul>
+                <li>
+                    <img style="width: 340px; margin-top: 7px;" src="images/仓库管理图标.png" /></li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 4px;">
+                <li>
+                    <label style="font-size: 30px;">仓库管理</label>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">仓库管理、区域管理、库位管理、库位容量</label>
+                    <p>
+                        功能概要: 全面记录商品属性，包括属性值和属性名称。包括颜色、尺码、系列、风格等，可以随时录入和更新信息。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">库存移动、库存调整</label>
+                    <p>
+                        功能概要: 即从一个仓库的某个库位移动到另一个仓库的某个库位。库存调整是调整某库位的商品数量，以此来将正确的数据记录的库存中
+                    </p>
+                </li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 10px;">
+                <li>
+                    <label style="font-size: 30px;">&nbsp;</label>
+                </li>
+                <li style="width: 288px;">
+                    <label style="font-size: 21.5px;">库存汇总查询 <br />&nbsp;</label>
+                    <p>
+                        功能概要: 商品库存数，打印数，销售数，货审占用数，订出数，在途数等，在这里都能查询到。
+                    </p>
+                </li>
+                <li >
+                    <label style="font-size: 21.5px;">库存预警</label>
+                    <p>
+                        功能概要: 主要是记录商品的最小数，超过这个预警值，就会转到需采购商品列表中，可以很轻松的管理商品数据。
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <!--订单管理-->
+        <div class="content" id="order" style="margin-left: 2%;">
+            <ul class="nav_ul" style="display: block">
+                <li>&nbsp;</li>
+            </ul>
+            <ul>
+                <li>
+                    <img style="width: 340px; margin-top: 48px;" src="images/订单管理图标.png" /></li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 4px;">
+                <li>
+                    <label style="font-size: 30px;">订单管理</label>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">客服报价</label>
+                    <p>
+                        功能概要: 此模块主要是用于客服在和客户交流时，通过系统能很轻松的跟客户报很靠谱的价格，价格是根据我们设定的某些计算值进行计算的，定价是非常精准的。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">客服下单</label>
+                    <p>
+                        功能概要:在此模块中分为自动下单和客服手工制单，自动下单是通过我们的程序，来获取商品数据到我们的ERP软件中，有的客户可能不是网络拍下的单据，直接找的客服，那客服就可以手工制单。
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">售中跟单</label>
+                    <p>
+                        功能概要:售中跟单，是产品销售后，需要对产品进行分批次处理，或者合并订单一致的单据，减少多发物流造成的损失。
+                    </p>
+                </li>
+            </ul>
+            <ul class="basic_ul" style="margin-left: 10px;">
+                <li>
+                    <label style="font-size: 30px;">&nbsp;</label>
+                </li>
+                <li style="width: 288px;">
+                    <label style="font-size: 21.5px;">发货出库</label>
+                    <p>
+                        功能概要: 售中跟单，是产品销售后，需要对产品进行分批次处理，或者合并订单一致的单据，减少多发物流造成的损失。
+                        <br />
+                        &nbsp;
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">订单变更</label>
+                    <p>
+                        功能概要:订单变更即换货，如果客户需要换货，就在此页面操作，换货后，下一级会做审核，审批通过的可以点审核，不通过的点击驳回即可。
+                        <br />
+                        &nbsp;
+                    </p>
+                </li>
+                <li>
+                    <label style="font-size: 21.5px;">订单结算</label>
+                    <p>
+                        功能概要:订单变更即换货，如果客户需要换货，就在此页面操作，换货后，下一级会做审核，审批通过的可以点审核，不通过的点击驳回即可。
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="foot">
+        <div class="foot_top">
+            <div class="public_box">
+                <p style="float: left; margin-left: 6%; margin-top: 15px; color: #fff; font-size: 14px; padding: 5px; width: 300px;">
+                    客服热线：<br />
+                    （上海）<span style="font-size: 19px">021-64063928</span><br />
+                    （佛山）<span style="font-size: 19px">0757-82901710</span><br />
+                    <span style="color: #919191;">服务时间： 09:00-24:00</span><br />
+                    <img style="margin-top: 8px;" src="images/QQ-微博-微信图标.png" />
+                </p>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img src="images/技术支持.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; line-height: 29px; text-align: center">技术支持</span>
+                    </p>
+                    <ul class="support">
+                        <li>软件安装升级
+                        </li>
+                        <li>系统培训
+                        </li>
+                        <li>业务流程梳理
+                        </li>
+                        <li>大促活动驻场支持
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img style="width: 24px; height: 29px;" src="images/招贤纳士.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; margin-top: 20px;">招贤纳士</span>
+                    </p>
+                    <ul class="support">
+                        <li><a href="../ContactUs.html" style="color: #fff">加入我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 80px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/新浪微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">新浪微博</li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 50px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/腾讯微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">腾讯微博</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">Copyright＠ 2011 上海客易软件有限公司</span>
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">地址：上海市七莘路250号中诣创意产业园2号楼2层   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东省佛山市禅城区季华五路金海大厦706</span>
+        </div>
+    </div>
+</body>
+</html>

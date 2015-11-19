@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>新闻中心</title>
+    <link href="style/main.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+            var myurl = GetQueryString("Id");
+            if (myurl != null && myurl.toString().length > 1) {
+                switch (myurl) {
+                    case "one":
+                        {
+                            $("#one").attr("style", "display: block");
+                            $("#two").attr("style", "display: none");
+                            $("#three").attr("style", "display: none");
+                            $("#four").attr("style", "display: none");
+                        }
+                        break;
+                    case "two":
+                        {
+                            $("#two").attr("style", "display: block");
+                            $("#one").attr("style", "display: none");
+                            $("#three").attr("style", "display: none");
+                            $("#four").attr("style", "display: none");
+                        }
+                        break;
+                    case "three":
+                        {
+                            $("#three").attr("style", "display: block");
+                            $("#one").attr("style", "display: none");
+                            $("#two").attr("style", "display: none");
+                            $("#four").attr("style", "display: none");
+                        }
+                        break;
+                    case "four":
+                        {
+                            $("#four").attr("style", "display: block");
+                            $("#one").attr("style", "display: none");
+                            $("#two").attr("style", "display: none");
+                            $("#three").attr("style", "display: none");
+
+                        }
+                        break;
+                }
+            }
+        });
+       
+    </script>
+    <style type="text/css">
+        .font_nav a {
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            float: left;
+            padding: 2px 10px 30px 10px;
+        }
+
+        .news_content {
+            width: 900px;
+            margin: 0 auto;
+            font-family: 微软雅黑;
+        }
+
+            .news_content p {
+                line-height: 28px;
+                padding: 8px;
+                color: #707070;
+                font-family: 微软雅黑;
+                font-size: 15px;
+                margin-top: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="public_box">
+            <div class="top_logo">
+                <img src="images/logo.jpg" />
+            </div>
+            <div class="top_font">
+                <div class="hot_phone">服务热线：021-64063928</div>
+                <div class="font_nav">
+                    <a href="../Index.html">
+                        <span class="font_chinese">首 页</span>
+                        <span class="font_english">Home</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../AboutUs.html">
+                        <span class="font_chinese">关于我们</span>
+                        <span class="font_english">About Us</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Products.html">
+                        <span class="font_chinese">产品中心</span>
+                        <span class="font_english">Products</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Solutions.html">
+                        <span class="font_chinese">解决方案</span>
+                        <span class="font_english">Solutions</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../Customized.html">
+                        <span class="font_chinese">软件定制</span>
+                        <span class="font_english">Customized Software</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../SuccesfulCases.html">
+                        <span class="font_chinese">成功案例</span>
+                        <span class="font_english">Succesful Cases</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../News.html" style="background: #dd224f;">
+                        <span class="font_chinese">新闻中心</span>
+                        <span class="font_english">News</span>
+                    </a>
+                    <p>
+                        <img src="images/line.jpg" />
+                    </p>
+                    <a href="../ContactUs.html">
+                        <span class="font_chinese">联系我们</span>
+                        <span class="font_english">Contact US</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="public_box">
+            <div class="banner_top" style="margin-top: 3px; width: auto;">
+                <h1 style="color: black; font-size: 42px; display: inline;">新闻中心</h1>
+                <h2 style="color: #dd224f; margin-left: 10px; font-size: 32px; display: inline; font-family: 微软雅黑">Customized Software</h2>
+                <br />
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="public_box">
+        <div class="news_content" id="one" style="display: block">
+            <h1 style="color: #5B5B5B; font-size: 21px; display: block; text-align: center;">中国数十万企业ERP系统待升级</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全球金融危机来袭，让中国的企业家们对企业管理的认识有了新的思考。新近由计世资讯联合清华大学经管学院对100位企业CEO的调查表明，越来越关注经营管理基本层面，以支持企业及时地转型与升级是这些CEO们正在广泛思考的问题。“升级”正在像“危机”一样，正成为企业家们讨论的热点话题。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;升级成为企业管理者们的热点话题，并不偶然。30年的改革开放，凭借“中国制造”的旗帜，在全球化的大潮中，中国挤身于世界经济大国的行列，一大批的制造型企业也悄然崛起，在解决了大量劳动力就业的同时，也使自己快速成长扩张，商业模式创新、多业务领域突破、两岸三地甚至全球化经营的企业案例层出不穷。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“危机总是在最猝不及防的时刻骤然降临，幸存下来的，不是那些貌似强壮的，也不是那些最大的，而是那些可以对变化做出最积极反应的企业。”计世资讯总经理曲晓东说。事实上，历史的经验表明，危机也往往是企业实力的“试金石”。经济学家发现，危机会加剧优势企业与弱势企业的分野，强者更强弱者淘汰；而每一次危机的大潮幕后，不少逆势成长的企业在经营模式、业务模式与管理模式上实现创新，这几乎成为一种规律。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;危机撞击企业家们的神经，而“升级”也日益成为中国企业发展的主旋律，这背后无疑蕴藏着众多中国企业家在深入思考应对危机之后的智慧和战略抉择。欲善其事 先利其器 数十万企业ERP待升级。工欲善其事，必先利其器。伴随这中国企业的升级浪潮，企业ERP系统升级也成为了企业信息化建设的关键词。2000年以来，随着用友、金蝶等民族软件厂商携多年本土市场的服务经验和客户基础，以及突出的成本优势，大举杀入ERP管理软件市场，在中国掀起了一股ERP普及的浪潮。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 至今，中国大部分的企业基本上都拥有了自己的ERP系统和信息化基础。但是，企业的CIO们发现，随着企业的快速成长，原来的ERP系统已经越来越难以适应目前的复杂应用形势。这使的企业ERP升级迫在眉睫。“我估计，包括已经拥有ERP系统的企业，以及尚未上马ERP系统而需要上ERP系统的企业，可能会有上百万家企业”，一位信息化专家这样估计当前中国ERP升级的市场需求。这位专家介绍，从转型升级的角度看企业ERP升级需求，需要对系统平台、复杂应用、管理能力的整体提升等三大升级考虑。比如近年来SOA系统架构开始流行，就是平台升级的要求和产物。此外，伴随着多区域、多业务、多形态基本特征，企业在组织形式上则多表现为多组织企业，相应的在信息化建设需求方面，ERP则面临成长型企业的复杂应用需求，这些都是企业ERP升级过程中必须考虑的问题。
+            </p>
+            <br />
+        </div>
+
+        <div class="news_content" id="two" style="display: none">
+            <h1 style="color: #5B5B5B; font-size: 21px; display: block; text-align: center;">2015年家具行业 五大营销趋势分析研究</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据了解，2014年一季度，国内规模以上家具制造业实现主营业务收入1496亿元，相比去年同期增长10.6%;实现利润总额75.4亿元，同比增长10.2%;实现主营活动利润74.1亿元，同比增长9.1%。这组数据证实了我们一直做的判断，家具市场空间还很大，只要企业具备质量过硬的产品，并且展开有力量的营销，就可能实现营收增长。
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年我国家具行业五大营销趋势分析
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哪些营销方式将是家具企业必须掌握的，而且最有可能影响一个家具企业的未来发展的？据中国报告大厅发布的2014-2018年传统家具行业未来前景预测报告分析认为，家具企业已经出现五大营销趋势，想异军突起，或者说活得更好一些的家具企业，请记住：一步领先，步步领先！<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;趋势一：互联网整合营销提速
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可能感兴趣的关于家具的研究报告：<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2020年中国家具行业深度调研及发展趋势分析报告2014-2018年中国酒店家具产业市场竞争格局分析与投资风险预测报告2014-2018年中国竹家具行业市场调研与投资盈利预测分析报告 全球板式家具行业市场深度调查与2014-2018年投资发展分析研究报告全球家具及家居用品行业市场深度调查与2014-2018年投资发展分析研究报告更多家具行业分析根据《让营销卓有成效！网络整合营销实战手记》一书的总结，三十六种互联网营销兵法，均是家具企业最美好的营销大餐。从搜索排名营销、词条、文库、问答，到营销型网站、新闻、事件营销，你已经采用哪几种了？<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;还没有行动的，赶紧制定计划，并投入大潮。如果已经行动了，请认真审视，并持续改进。从互联网整合营销中掘金，早就不是梦想。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;趋势二：电商凶猛<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谁都不能否认家具与电商之间的美好姻缘，虽然也有离婚的现象，但大好形势不可阻挡，最大的销量来自简易衣柜，除此之外，桌、椅、床、沙发等，仍然有庞大的真实销量。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不仅仅是天猫或淘宝上开个店，有实力的情况下，也可以自己开店，当然，第三方支付与第三方信用保险无论如何都不可缺少，毕竟品牌自己既做运动员，又做裁判员，知识越来越丰富的消费者们很难认账的。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;趋势三：大店经营<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相信，很多家具企业都在开店，小店、中店、大店，只要能够开起，都会兼顾到。这种营销方式永不落伍，即使电商凶猛的年代，它依然是主流。只是具体的策略要转变，比如开多少店、多少公里开店、店的推广方式怎么做，都有更丰富的内容和更具挑战的要求。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以推广方式来讲，把店面装修漂亮、等客上门，以及发传单、小区推广这些方式已经不够了，有必要结合一下本地化搜索与微信营销这些方式。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;趋势四：请讲故事<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家具企业本身都可能有一段故事，比如说企业的创办、某种木材的珍贵，某种工艺的发明和传承等等，但这些已经不新鲜了。必须有，但却不能异军突起。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请再多创造一些故事，并且把这些故事讲出来，让大家知道。怎么创造？那就需要在设计、工艺、材质、文化等多方面下功夫。如果能连续办文化类讲座，也是不错的。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;趋势五：联盟动起来！<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;有没有注意到，很多同类企业或者跨界家具企业，开始搞联盟促销，虽然不是司空见惯的现象，但绝对是经常可以碰到。这是一大核心营销趋势，如何联盟，同谁联盟，怎么推广联盟，都有经验和技巧。
+            </p>
+            <br />
+        </div>
+
+        <div class="news_content" id="three" style="display: none">
+            <h1 style="color: #5B5B5B; font-size: 21px; display: block; text-align: center;">ERP系统信息安全问题解析</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当今，企业竞争已经从单一企业间的竞争朝着企业供应链之间的竞争发展、企业仅靠自身资源已经无法有效地参与市场竞争，还必须把经营过程中的有关各方纳入一个紧密的供应链中，才能有效地安排企业的产、供、销活动，满足企业利用全社会一切市场资源快速高效地进行生产经营的需求，以进一步提高效率和在市场上获得竞争优势、针对这一需求，企业纷纷引进ERP系统，构建企业信息化平台、当前ERP系统是指针对物资资源管理、人力资源管理、财务资源管理、信息资源管理集成一体化的企业管理软件、ERP系统实现了对整个企业供应链的管理、适应了企业在知识经济时代市场竞争的需要、鉴于ERP系统的巨大优势、目前绝大多数大型企业均实现了ERP系统的部署实施。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 然而，由于互联网上存在大量的网络攻击、木马、蠕虫等网络安全威胁。而ERP系统的正常运行依赖于大量的网络传输、数据处理和消息交互这就阻碍了ERP系统的应用与实施、因此，研究ERP系统所面对的安全威胁并采取相应措施进行规避是一项非常重要的课题。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> ERP系统信息安全威胁</b>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全问题的产生是一个非常复杂的问题，包含了多种因素的相互作用， ERP专家认为企业ERP系统所面临的信息安全威胁主要包括来自以下几个方面的内容。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一，ERP系统应用的威胁
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果ERP系统本身管理不当，也不会存在数据泄露的危险、从ERP系统的角度出发。主要的安全威胁就是权限配置不当所造成的。这类威胁主要在敏感数据缺乏分级管理机制，比如某个报表，只要有查看权限的都能够看到全部信息，并且能够导出。这就给敏感数据造成了很大的威胁、此外，很多员工的终端系统密码设置较为简单，大多使用生日或者电话，有的其至使用“123456”等简单数字作为密码，这类密码强度不高，容易被破解。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二，ERP网络应用的威胁
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来自网络层面的威胁主要来自远程访问企业内部系统所造成的信息泄漏隐患、随着企业规模的不断扩展，对外的销售和物流网络也随之扩大。出差的业务员和某些客户经常需要在异地远程访问企业网络资源，由于异地访问行为不受约束，泄密行为时有发生，因此价值较高的商业机密有可能流失，比如企业产品的底价、设计图纸等等。此外，内部网络的窃听行为也给ERP系统的安全使用造成威胁、ERP系统应用时。其服务器端与客户端数据的传输、都是通过明文传输的、用户只需要在网络上安装一个监听软件、就可以全面的了解用户访问的内容。跳过客户端的权限设置，从而达到网络数据窃听的目的。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三，ERP系统漏洞的威胁
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP系统的构建需要大量的软硬件系统，涉及到网络传输、Web浏览以及服务总线等多方面的技术，这些技术的实现需要大量的软件，软件不可能避免存在一些已知或者未知的漏洞、黑客能够利用这些漏洞获取ERP服务器的权限，从而扰乱系统的正常运行，并窃取重要的商业机密。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> ERP信息安全保障措施</b>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP系统的安全最重要，为了保障ERP系统在应用中的信息安全，针对上述三类威胁，博科软件通常有以下几种方法进行应对。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一，网络传输安全保障ERP系统的传输安全可以从两方面进行强化
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，对远程访问权限采用指纹、密码等多种身份识别机制，同时限制远程访问行为所能够接触到资源的数量，在保障业务的同时避免泄密。其次，可以对数据报表采用嵌入水印的方式讲行保护，比如一份报表如果事后被发现窃密了，可以通过水印的方式检测出其它信息，并结合ERP日志进行辅助案件侦破。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二，信息应用安全保障
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP信息应用安全保障主要包括对重要数据进行分级管理，同时对所有合法用户进行分级，确保他们所能访问的数据级别和类型、比如某个员工只具有中级数据访问权限，而某个报表的一些属性项是高密级，它就无法查看该属性项，而只能看到其他低密级选项。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三，完善网络信息安全保障体系
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先，需要制定完善的法律政策，以法制手段来强化网络安全;其次，从管理上维护系统的安全，确定信息安全管理机构和切实可行的网络管理规章制度，加强信息安全教育、提高高层管理者的安全意识，以保证网络信息安全;最后，从技术上采取措施，在企业内部和互联网之间要加一道防火墙，防止黑客或计算机病毒的袭击，保护企业内部的敏感数据。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第四，系统漏洞安全保障
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP系统的漏洞修复工作主要依赖专业测评机构的工作、通过定期安全测评、管理员能够发现系统中存在的软硬件漏洞，并及时采取相应措施进行修补、同时在配置上的问颗也要依赖系统管理员的经验，尽量少开放端口，并目保证一些不安全的服务必须受限、比如一些微软公告所描述的信息往往包含ERP涉及软件的漏洞。需要认即进行修补、因此，管理员的安全意识更需要进一步提高。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五，加强对操作人品的培训
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业信息化管理涉及整个企业经营管理模式的变革，它把信息技术与管理相结合，利用先进技术不断提高管理水平、加强财务管理信息化建设，必须从公司主要领导开始到所有工作人员进行动员，充分认识到信息化对提高管理水平的重要性、工作人员要在思想观念上更新和转变对管理的理解和认识，必须在系统上建立健全工作人员培训制度，并在系统建设的全过程中贯彻落实，以提高员工的业务素质以及熟练使用软件的能力、具有创新能力的人员是企业顺利而有效地开展管理创新的基础，有针对性地对人员进行网络技术培训，可以提高人员的适应能力和创新能力、同时企业要树立与网络环境，适应的信息观念、协作竞争观念、以人为本观念和开放型管理模式。
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP系统的广泛使用是信息化推进和企业市场规模发展到一定阶段的产物、如何在利用ERP带来的企业运营和管理便利的同时、尽可能避免安全威胁、是在ERP系统应用过程中需要详细考虑的问题、随着信息安全技术的不断发展，不断有新的威胁会出现，也需要ERP系统进一步提高安全意识，防范可能的网络攻击行为。
+            </p>
+            <br />
+        </div>
+
+        <div class="news_content" id="four" style="display: none">
+            <h1 style="color: #5B5B5B; font-size: 21px; display: block; text-align: center;">Gartner：2015年全球IT支出将稳步增长</h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全球领先的信息技术研究和顾问公司Gartner发布最新预测，2015年全球IT支出将稳步达到3.8万亿美元，与2014年相比增长2.4%；不过，该增长率低于先前预测的3.9%。对2015年的展望较预期为缓主要是因美元升值，以及终端设备、IT服务与电信服务的增长预测略微下调所致。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gartner研究副总裁John-David Lovelock表示：“预测下调的幅度其实比乍看之下要低。美元升值是下调的主要因素，若以固定汇率来看，下调幅度仅为0.1%。排除汇率变动的影响，依固定汇率计算的增长率实为3.7%，与上一季度预测的3.8%几乎相同。”<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gartner全球IT支出预测是主要技术趋势的领先指标，涵盖硬件、软件、IT服务和电信市场。 逾十年来， 全球IT 和业务主管皆采用这些备受瞩目的季报洞察市场商机与挑战， 以经过实证的研究方法为基础，拟订重要业务决策，而非仅凭臆测。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年终端设备市场(包括PC、Ultramobile、手机、平板和打印机)以美元计算的支出增长率将达到5.1%。智能手机市场将朝着高、低价位两极化发展。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年数据中心系统支出预计将达到1430亿美元，与2014年相比增长1.8%。该市场在企业通信应用程序与企业网络设备领域的增长率与上一季度预测相比有所提升，但服务器以及外接控制器存储设备领域的增长率却有所下降。这些增长率变化的背后因素是汰换周期延长，以及转移至云端服务的情况超出预期。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在企业级软件市场方面，支出将稳步增长至3350亿美元，与2014年相比增长5.5%。然而，价格侵蚀与厂商合并的情况在2015年将更为严重，这是云端软件厂商与企业内软件厂商彼此激烈竞争的结果。尤其在客户关系管理（CRM）市场这个云端主战场内，销售自动化系统（SFA）等领域的基底价格预期至2018年将下降25%。这是现有企业内软件厂商大为降低其云端产品价格以试图维持现有客户群的结果。其他领域同样也会面临与云端产品一样的日益激烈的价格竞争，例如数据库管理系统（DBMS）以及应用程序基础架构与中间件，不过情况与CRM市场相比将稍为缓和。<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　2015年IT服务增长率预测下调至2.5%，低于上一季度预测的4.1%。就全球而言，软件支持服务的减少将尤为影响该市场至2018年的增长率预测，这是由企业级软件增速下降所致。<br />
+            </p>
+            <br />
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot_top">
+            <div class="public_box">
+                <p style="float: left; margin-left: 6%; margin-top: 15px; color: #fff; font-size: 14px; padding: 5px; width: 300px;">
+                    客服热线：<br />
+                    （上海）<span style="font-size: 19px">021-64063928</span><br />
+                    （佛山）<span style="font-size: 19px">0757-82901710</span><br />
+                    <span style="color: #919191;">服务时间： 09:00-24:00</span><br />
+                    <img style="margin-top: 8px;" src="images/QQ-微博-微信图标.png" />
+                </p>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img src="images/技术支持.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; line-height: 29px; text-align: center">技术支持</span>
+                    </p>
+                    <ul class="support">
+                        <li>软件安装升级
+                        </li>
+                        <li>系统培训
+                        </li>
+                        <li>业务流程梳理
+                        </li>
+                        <li>大促活动驻场支持
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 30px; width: 170px; margin-top: 7px;">
+                    <p style="border-bottom: 1px solid #fff; padding: 4px; width: 120px;">
+                        <img style="width: 24px; height: 29px;" src="images/招贤纳士.png" align="absmiddle" />&nbsp;&nbsp;
+                    <span style="color: #fff; font-size: 14px; height: 29px; margin-top: 20px;">招贤纳士</span>
+                    </p>
+                    <ul class="support">
+                        <li><a href="../ContactUs.html" style="color: #fff">加入我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 80px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/新浪微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">新浪微博</li>
+                    </ul>
+                </div>
+                <div style="float: left; margin-left: 50px; width: 100px; margin-top: 10px;">
+                    <ul style="color: #fff; padding: 4px;">
+                        <li>
+                            <img style="width: 100px; height: 100px;" src="images/腾讯微博.png" /></li>
+                        <li style="text-align: center; font-size: 13px;">腾讯微博</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot_bottom">
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">Copyright＠ 2011 上海客易软件有限公司</span>
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">地址：上海市七莘路250号中诣创意产业园2号楼2层   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东省佛山市禅城区季华五路金海大厦706</span>
+        </div>
+    </div>
+</body>
+</html>

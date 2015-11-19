@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80281ACB-3E32-4311-B87D-A8B227A06AB5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeyiSoftWebSite</RootNamespace>
+    <AssemblyName>KeyiSoftWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.html" />
+    <Content Include="ContactUs.html" />
+    <Content Include="Customized.html" />
+    <Content Include="images\1-订单管理--1.jpg" />
+    <Content Include="images\1-订单管理--2.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2-采购管理-1.jpg" />
+    <Content Include="images\2-采购管理-2.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3-多平台接入-1.jpg" />
+    <Content Include="images\3-多平台接入-2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4-库存管理-1.jpg" />
+    <Content Include="images\4-库存管理-2.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\5-财务管理-1.jpg" />
+    <Content Include="images\5-财务管理-2.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\banner_01.jpg" />
+    <Content Include="images\banner_02.jpg" />
+    <Content Include="images\banner_03.jpg" />
+    <Content Include="images\ERP-banner.jpg" />
+    <Content Include="images\ks.png" />
+    <Content Include="images\kes.png" />
+    <Content Include="images\bj.png" />
+    <Content Include="images\htt.png" />
+    <Content Include="images\lkfn.png" />
+    <Content Include="images\ys.png" />
+    <Content Include="images\pgy.png" />
+    <Content Include="images\sdx.png" />
+    <Content Include="images\业务痛处.jpg" />
+    <Content Include="images\业务背景.jpg" />
+    <Content Include="images\产品中心-CRM描述.jpg" />
+    <Content Include="images\人才招聘底.png" />
+    <Content Include="images\仓库管理图标.png" />
+    <Content Include="images\企业文化.jpg" />
+    <Content Include="images\公司简介.jpg" />
+    <Content Include="images\商品管理图标.jpg" />
+    <Content Include="images\基础信息图标.jpg" />
+    <Content Include="images\新浪微博.png" />
+    <Content Include="images\组织结构图片.jpg" />
+    <Content Include="images\联系我们-地图.jpg" />
+    <Content Include="images\联系方式底.png" />
+    <Content Include="images\腾讯微博.png" />
+    <Content Include="images\花边.jpg" />
+    <Content Include="images\解决方案图标.jpg" />
+    <Content Include="images\订单管理图标.png" />
+    <Content Include="images\软件定制流程图.jpg" />
+    <Content Include="images\采购管理图标.jpg" />
+    <Content Include="Index.html" />
+    <Content Include="images\1-客易首页.jpg" />
+    <Content Include="images\crm.png" />
+    <Content Include="images\crm1.png" />
+    <Content Include="images\erp.png" />
+    <Content Include="images\erp1.png" />
+    <Content Include="images\MORE.png" />
+    <Content Include="images\oa.png" />
+    <Content Include="images\oa1.png" />
+    <Content Include="images\QQ-微博-微信图标.png" />
+    <Content Include="images\top.jpg" />
+    <Content Include="images\company_profile.png" />
+    <Content Include="images\individual_service.png" />
+    <Content Include="images\客易logo横.png" />
+    <Content Include="images\客易首页.jpg" />
+    <Content Include="images\底部导航背景色.jpg" />
+    <Content Include="images\suc_right.png" />
+    <Content Include="images\suc_left.png" />
+    <Content Include="images\技术支持.png" />
+    <Content Include="images\招贤纳士.png" />
+    <Content Include="images\电话标志.png" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.jslides.js" />
+    <Content Include="js\public.js" />
+    <Content Include="News.html" />
+    <Content Include="Products.html" />
+    <Content Include="Solutions.html" />
+    <Content Include="style\main.css" />
+    <Content Include="SuccesfulCases.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18965/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

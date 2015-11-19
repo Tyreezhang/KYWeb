@@ -1,0 +1,374 @@
+﻿
+/*Reset css*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    /*margin: 0 auto;*/
+    font-family: "微软雅黑";
+}
+html { overflow-x: hidden; }
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.public_box {
+    width: 1200px; /*原为1280px*/
+    overflow: hidden;
+    height: auto;
+    margin: 0 auto;
+}
+/*top*/
+.top {
+    height: 122px;
+    background: #0e3f9c;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.top_logo {
+    width: 253px;
+    height: 81px;
+    float: left;
+    margin-top: 14px;
+}
+
+.hot_phone {
+    float: right;
+    color: #fff;
+    background: url(../images/24h.jpg) no-repeat left center;
+    padding-left: 38px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.font_nav {
+    width: 900px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+    .font_nav a {
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        float: left;
+        padding: 2px 10px 31px 10px;
+    }
+
+        .font_nav a:hover {
+            background: #dd224f;
+        }
+
+        .font_nav a .font_chinese {
+            font-size: 18px;
+            display: block;
+        }
+
+        .font_nav a .font_english {
+            font-size: 10px;
+        }
+
+    .font_nav p {
+        float: left;
+        display: inline;
+        margin-top: 4px;
+        padding: 7px;
+    }
+
+.content_left {
+    width: 340px;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 15px;
+    color: #5B5B5B;
+    font-family: "微软雅黑";
+}
+
+.content_mid {
+    width: 340px;
+    height: auto;
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #5B5B5B;
+    font-family: "微软雅黑";
+}
+
+.content_right {
+    width: 340px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #5B5B5B;
+    font-family: "微软雅黑";
+}
+
+.news li {
+    text-align: left;
+    width: 320px;
+}
+
+    .news li a {
+        font-family: "微软雅黑";
+        font-size: 13px;
+        color: black;
+    }
+
+.foot {
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.foot_top {
+    background-color: #1A1A1A;
+    /*background: url(../images/底部导航背景色.jpg) repeat-x;*/
+    height: 150px;
+}
+
+.foot_bottom {
+    overflow: hidden;
+    line-height: 28px;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.banner {
+    height: 110px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #EEECED;
+    overflow: hidden;
+}
+
+#div_company {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+#div_organization {
+    margin-top: 20px;
+    padding-left: 120px;
+}
+
+.main_line {
+    border-top: 1px solid #727272;
+    width: 1080px;
+    margin-top: 40px;
+}
+
+#div_culture {
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+#div_vision {
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.banner_top {
+    color: #5B5B5B;
+    font-family: "微软雅黑";
+    padding-left: 50px;
+}
+
+    .banner_top h1 {
+        font-size: 42px;
+        display: inline;
+        color: #000;
+    }
+
+.banner_top_navigation {
+    cursor: pointer;
+    margin-top: 6px;
+    float: left;
+    width: 170px;
+    height: 28px;
+    margin-right:10px;
+}
+
+    .banner_top_navigation a {
+        color: black;
+        font-size: 13px;
+    }
+
+.support {
+    list-style: disc;
+    color: #fff;
+    font-size: 13px;
+}
+
+    .support li {
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+
+.content {
+    height: auto;
+    width: auto;
+    margin-left: 42px;
+    margin-top: 15px;
+    font-family: "微软雅黑";
+}
+/*banner滚动*/
+#lanrenzhijia {
+    width: 100%;
+    height: 440px;
+    float: left;
+    position: relative;
+}
+
+#slides {
+    display: block;
+    width: 100%;
+    height: 440px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+    #slides li {
+        display: block;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+
+        #slides li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+
+#pagination {
+    display: block;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    z-index: 3;
+    padding: 5px 15px 5px 0;
+    margin: 0;
+}
+
+    #pagination li {
+        display: block;
+        list-style: none;
+        width: 15px;
+        height: 15px;
+        float: left;
+        margin-left: 10px;
+        border-radius: 15px;
+        background: #BBBBBB;
+    }
+
+        #pagination li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-indent: -9999px;
+        }
+
+        #pagination li.current {
+            background: #306382;
+        }
+
+/*成功案例滚动*/
+/*.hl_main5_content{width:1000px; height:40px; border-top:none;}*/
+.hl_main5_content1 {
+    width: 900px;
+    margin-top: 25px;
+    overflow: hidden;
+    float: left;
+    margin-left: 22px;
+}
+
+    .hl_main5_content1 ul {
+        width: 1600px;
+        overflow: hidden;
+    }
+
+        .hl_main5_content1 ul li {
+            float: left;
+            display: inline;
+            width: 180px;
+            overflow: hidden;
+        }
+
+            .hl_main5_content1 ul li a {
+                height: 40px;
+                display: block;
+                text-align: center;
+            }
+
+            .hl_main5_content1 ul li span {
+                width: 108px;
+                display: block;
+            }
+
+                .hl_main5_content1 ul li span:hover {
+                    cursor: pointer;
+                }
+
+.hl_scrool_leftbtn {
+    width: 48px;
+    height: 53px;
+    background: url(../images/suc_left.png) no-repeat;
+    float: left;
+    margin-left: 6%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.hl_scrool_rightbtn {
+    width: 50px;
+    height: 53px;
+    background: url(../images/suc_right.png) no-repeat;
+    float: left;
+    margin-left: 38px;
+    margin-top: 15px;
+    cursor: pointer;
+}
