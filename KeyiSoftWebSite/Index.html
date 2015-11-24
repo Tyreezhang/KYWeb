@@ -4,8 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>上海客易软件有限公司--首页</title>
     <link href="style/main.css" rel="stylesheet" />
+    <link href="style/qq.css" rel="stylesheet" />
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.jslides.js"></script>
+    <script src="js/qq.js"></script>
     <style type="text/css">
         .img {
             width: 180px;
@@ -22,8 +24,8 @@
                 case "crm":
                     $("#crm").attr("src", "images/crm1.png");
                     break;
-                case "oa":
-                    $("#oa").attr("src", "images/oa1.png");
+                case "gc":
+                    $("#gc").attr("src", "images/gc1.jpg");
                     break;
                 default: break;
             }
@@ -37,8 +39,8 @@
                 case "crm":
                     $("#crm").attr("src", "images/crm.png");
                     break;
-                case "oa":
-                    $("#oa").attr("src", "images/oa.png");
+                case "gc":
+                    $("#gc").attr("src", "images/gc.jpg");
                     break;
                 default: break;
             }
@@ -46,6 +48,9 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
+            var now = new Date();
+            var yy = now.getFullYear(); //截取年，即2015 
+            $("#nowdate").text(yy);
             // 成功案例滚动
             var flag = "left";
             function DY_scroll(wraper, prev, next, img, speed, or) {
@@ -78,6 +83,7 @@
     </script>
 </head>
 <body>
+
     <!-- top-->
     <div class="top">
         <div class="public_box">
@@ -85,58 +91,58 @@
                 <img src="images/logo.jpg" />
             </div>
             <div class="top_font">
-                <div class="hot_phone">服务热线：021-64063928</div>
+                <div class="hot_phone">服务热线：0757-82901710</div>
                 <div class="font_nav">
-                    <a href="../Index.html" style="background: #dd224f;">
+                    <a href="./Index.html" style="background: #dd224f;">
                         <span class="font_chinese">首 页</span>
                         <span class="font_english">Home</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../AboutUs.html">
+                    <a href="./AboutUs.html">
                         <span class="font_chinese">关于我们</span>
                         <span class="font_english">About Us</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../Products.html">
+                    <a href="./Products.html">
                         <span class="font_chinese">产品中心</span>
                         <span class="font_english">Products</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../Solutions.html">
+                    <a href="./Solutions.html">
                         <span class="font_chinese">解决方案</span>
                         <span class="font_english">Solutions</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../Customized.html">
+                    <a href="./Customized.html">
                         <span class="font_chinese">软件定制</span>
                         <span class="font_english">Customized Software</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../SuccesfulCases.html">
+                    <a href="./SuccesfulCases.html">
                         <span class="font_chinese">成功案例</span>
                         <span class="font_english">Succesful Cases</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../News.html">
+                    <a href="./News.html">
                         <span class="font_chinese">新闻中心</span>
                         <span class="font_english">News</span>
                     </a>
                     <p>
                         <img src="images/line.jpg" />
                     </p>
-                    <a href="../ContactUs.html">
+                    <a href="./ContactUs.html">
                         <span class="font_chinese">联系我们</span>
                         <span class="font_english">Contact US</span>
                     </a>
@@ -147,9 +153,9 @@
     <!-- banner-->
     <div id="lanrenzhijia">
         <ul id="slides">
-            <li style="z-index: 0; display: block; background: url(images/banner_01.jpg) 50% 0% no-repeat;"></li>
-            <li style="z-index: 1; display: none; background: url(images/banner_02.jpg) 50% 0% no-repeat;"></li>
-            <li style="z-index: 1; display: none; background: url(images/banner_03.jpg) 50% 0% no-repeat;"></li>
+            <li style="z-index: 0; display: block; background: url(images/首页banner-1.jpg) 50% 0% no-repeat;"></li>
+            <li style="z-index: 1; display: none; background: url(images/banner_01.jpg) 50% 0% no-repeat;"></li>
+            <li style="z-index: 1; display: none; background: url(images/首页banner-3.jpg) 50% 0% no-repeat;"></li>
         </ul>
     </div>
 
@@ -161,17 +167,17 @@
             </div>
             <div style="float: right">
                 <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
-                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+                    <a href="./News.html" style="color: #fff; font-size: 14px;">MORE</a></span>
             </div>
             <div style="clear: both">
                 <ul class="news">
-                    <li><a href="../News.html?Id=one">中国数十万企业ERP系统待升级2014-05-10</a></li>
+                    <li><a href="./News.html?Id=one">中国数十万企业ERP系统待升级2014-05-10</a></li>
                     <li>----------------------------------------</li>
-                    <li><a href="../News.html?Id=two">2015年家具行业 五大营销趋势分析研究2014-05-10</a></li>
+                    <li><a href="./News.html?Id=two">2015年家具行业 五大营销趋势分析研究2014-05-10</a></li>
                     <li>----------------------------------------</li>
-                    <li><a href="../News.html?Id=three">ERP系统信息安全问题解析2014-05-10</a></li>
+                    <li><a href="./News.html?Id=three">ERP系统信息安全问题解析2014-05-10</a></li>
                     <li>----------------------------------------</li>
-                    <li><a href="../News.html?Id=four">Gartner：2015年全球IT支出将稳步增长2014-05-10</a></li>
+                    <li><a href="./News.html?Id=four">Gartner：2015年全球IT支出将稳步增长2014-05-10</a></li>
                     <li>----------------------------------------</li>
                 </ul>
             </div>
@@ -183,7 +189,7 @@
             </div>
             <div style="float: right">
                 <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
-                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+                    <a href="./AboutUs.html" style="color: #fff; font-size: 14px;">MORE</a></span>
             </div>
             <div style="clear: both">
                 <img src="images/company_profile.png" />
@@ -199,7 +205,7 @@
             </div>
             <div style="float: right">
                 <span style="margin-top: 4px; float: right; width: 60px; height: 18px; background: #8E8E9A; text-align: center; line-height: 18px;">
-                    <a href="##" style="color: #fff; font-size: 14px;">MORE</a></span>
+                    <a href="./Customized.html" style="color: #fff; font-size: 14px;">MORE</a></span>
             </div>
             <div style="clear: both">
                 <img src="images/individual_service.png" />
@@ -215,18 +221,18 @@
     </div>
     <div class="public_box">
         <div class="content_left">
-            <a>
+            <a href="./Products.html">
                 <img id="erp" style="cursor: pointer;" src="images/erp.png" onmouseover="onmouse('erp');" onmouseout="leavemouse('erp') " />
             </a>
         </div>
         <div class="content_mid" style="margin-left: 4%;">
-            <a>
+            <a href="./Products.html">
                 <img id="crm" style="cursor: pointer;" src="images/crm.png" onmouseover="onmouse('crm');" onmouseout="leavemouse('crm') " />
             </a>
         </div>
         <div class="content_right" style="margin-left: 4%;">
-            <a>
-                <img id="oa" style="cursor: pointer;" src="images/oa.png" onmouseover="onmouse('oa');" onmouseout="leavemouse('oa') " />
+            <a href="./Products.html">
+                <img id="gc" style="cursor: pointer;" src="images/gc.jpg" onmouseover="onmouse('gc');" onmouseout="leavemouse('gc') " />
             </a>
         </div>
     </div>
@@ -271,7 +277,6 @@
             <div class="public_box">
                 <p style="float: left; margin-left: 6%; margin-top: 15px; color: #fff; font-size: 14px; padding: 5px; width: 300px;">
                     客服热线：<br />
-                    （上海）<span style="font-size: 19px">021-64063928</span><br />
                     （佛山）<span style="font-size: 19px">0757-82901710</span><br />
                     <span style="color: #919191;">服务时间： 09:00-24:00</span><br />
                     <img style="margin-top: 8px;" src="images/QQ-微博-微信图标.png" />
@@ -298,7 +303,7 @@
                     <span style="color: #fff; font-size: 14px; height: 29px; margin-top: 20px;">招贤纳士</span>
                     </p>
                     <ul class="support">
-                        <li><a href="../ContactUs.html" style="color: #fff">加入我们</a>
+                        <li><a href="./ContactUs.html" style="color: #fff">加入我们</a>
                         </li>
                     </ul>
                 </div>
@@ -319,9 +324,32 @@
             </div>
         </div>
         <div class="foot_bottom">
-            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">Copyright＠ 2011 上海客易软件有限公司</span>
+            <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">Copyright＠ 2011 - <label id="nowdate"></label> 上海客易软件有限公司</span>
             <span style="width: 100%; height: 20px; line-height: 20px; text-align: center; display: block;">地址：上海市七莘路250号中诣创意产业园2号楼2层   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东省佛山市禅城区季华五路金海大厦706</span>
         </div>
+<div id="floatTools" class="float0831">
+  <div class="floatL"><a style="DISPLAY: none" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');" href="javascript:void(0);">展开</a> <a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');" href="javascript:void(0);">收缩</a> </div>
+  <div id="divFloatToolsView" class="floatR">
+    <div class="tp"></div>
+    <div class="cn">
+      <ul>
+        <li class="top_li">
+          <h3 class="titZx">QQ咨询</h3>
+        </li>
+        <li><a class="icoTc" target="_blank" href="http://sighttp.qq.com/msgrd?v=1&amp;uin=823540218&amp;site=www.keyisoft.cn&amp;menu=yes">客易销售一</a> </li>
+        <li><a class="icoTc" target="_blank" href="http://sighttp.qq.com/msgrd?v=1&amp;uin=2093558517&amp;site=www.keyisoft.cn&amp;menu=yes">客易销售二</a> </li>
+        <li><a class="icoTc" target="_blank" href="http://sighttp.qq.com/msgrd?v=1&amp;uin=3130947174&amp;site=www.keyisoft.cn&amp;menu=yes">客易销售三</a> </li>      
+        <li><a class="icoTc" target="_blank" href="http://sighttp.qq.com/msgrd?v=1&amp;uin=2978552889&amp;site=www.keyisoft.cn&amp;menu=yes">客易客服</a> </li>
+      </ul>
+      <ul>
+        <li>
+          <h3 class="titDh">电话咨询</h3>
+        </li>
+        <li><span class="icoTl"><font color="#FF9501" style="font-size:9px; display:block; width:auto;">18666508551</font></span> </li>
+      </ul>
+    </div>
+  </div>
+</div>
     </div>
 </body>
 </html>

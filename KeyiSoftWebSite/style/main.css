@@ -364,7 +364,7 @@ table {
 }
 
 .hl_scrool_rightbtn {
-    width: 50px;
+    width: 120px;
     height: 53px;
     background: url(../images/suc_right.png) no-repeat;
     float: left;
